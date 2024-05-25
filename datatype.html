@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Datatypes</title>
+</head>
+<body>
+    <h1>Strings</h1>
+	<h1 id="innoo"></h1>
+	<h1 id="innoo1"></h1>
+	<h1 id="innoo3"></h1>
+	<h1 id="innoo4"></h1>
+	<h1 id="one"></h1>
+    <h1 id="two"></h1>
+
+	<script type="text/javascript">
+		let txt="Hii How are you guys";
+		let length=txt.length;
+		let text="Hii \"How\" are you guys";
+		let a=`The show will
+		start at night 12 pm
+		onwards`;
+		document.getElementById("innoo").innerHTML=txt;
+		document.getElementById("innoo1").innerHTML=txt.length;
+	    document.getElementById("innoo3").innerHTML=text;
+	    document.getElementById("innoo4").innerHTML=" Hiii "+" Good Morning ";
+	    document.getElementById("one").innerHTML= a;
+	</script>
+
+    <h1 id="inno2"></h1>
+	<script type="text/javascript">
+		let b=126e5;
+		let c=123e-5;
+		document.getElementById("inno2").innerHTML= b + "<br> "+ c;
+	</script>
+
+	<h1 id="inno3"></h1>
+	<script type="text/javascript">
+		let g= BigInt(999999999999999);
+		document.getElementById("inno3").innerHTML= typeof g;
+	</script>
+    <h1 id="three"></h1>
+	<script>
+    let k=5;
+    let j = 5;
+    let l = 6;
+
+    document.getElementById("three").innerHTML =
+    (k == j) + "<br>" + (k == l);
+    </script>
+    <h1 id="four"></h1>
+    <script>
+    let car;
+    document.getElementById("four").innerHTML =
+    car + "<br>" + typeof car;
+    </script>
+
+    <h1 id="five"></h1>
+    <script>
+    let bike = "";
+    document.getElementById("five").innerHTML =
+    "The value is: " +
+     bike + "<br>" +
+    "The type is: " + typeof bike;
+    </script>
+     
+    <h1 id="six"></h1>
+    <script>
+    const person = {
+    Name : "Jack",
+    age     : 40,
+    };
+
+    document.getElementById("six").innerHTML =person.Name + " is " + 
+    person.age + " years old.";
+    </script>
+
+</body>
+</html>
+

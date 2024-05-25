@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Conditional Statements</title>
+</head>
+<body>
+
+	<h1 id="innoo"></h1>
+	<script type="text/javascript">
+		if(x=10)
+		{
+			document.getElementById('innoo').innerHTML=x;
+		}
+	</script>
+
+	<h1 id="innoo1"></h1>
+	<script type="text/javascript">
+		if(x=10)
+		{
+			document.getElementById('innoo1').innerHTML=x;
+		}
+	</script>
+
+	<h1 id="innoo1"></h1>
+	<script type="text/javascript">
+		if(a=10+20)
+		{
+			a++;
+			document.getElementById('innoo1').innerHTML=a;
+		}
+	</script>
+
+	<h1 id="innoo2"></h1>
+	<script type="text/javascript">
+		if(a=10+20)
+		{
+			a--;
+			document.getElementById('innoo2').innerHTML=a;
+		}
+	</script>
+    
+    <h1 id="one"></h1>
+	<script type="text/javascript">
+		let age=20;
+		if(age>=18)
+		{
+			age="eligible for voting";
+		}else{
+			age="Not eligible for voting";
+		}
+		document.getElementById("one").innerHTML=age;
+	</script>
+
+	<h1 id="one"></h1>
+	<script type="text/javascript">
+		let c=25;
+		if(c<18)
+		{
+			a="c is smaller";
+		}else if(c>20){
+			a="c is larger";
+		}else{
+			a="c is smaller than or equal to";
+		}
+		document.getElementById("one").innerHTML=a;
+	</script>
+
+	<h1 id="two"></h1>
+	<script type="text/javascript">
+		let grade="D";
+		let result;
+		switch(grade){
+		case 'A':
+			result="A(Excellent)";
+			break;
+		case 'B':
+			result="B(Average)";
+			break;
+		case 'C':
+			result="C(Below than average)";
+			break;
+		default:
+			result="No Grade";
+		}
+		document.getElementById('two').innerHTML=result;
+	</script>
+
+    <h1 id="three"></h1>
+    <script type="text/javascript">
+    	let text= "";
+    	for (let i=0;i<=5;i++)
+    	{
+    		text +="The number is " +i+ "<br>";
+    	}
+    	document.getElementById('three').innerHTML=text;
+    </script>
+
+     <h1 id="four"></h1>
+    <script type="text/javascript">
+    	let s=5;
+    	for (let s=0;s<=10;s++)
+    	{
+    		
+    	}
+    	document.getElementById('four').innerHTML=s;
+    </script>
+
+    <h1 id="five"></h1>
+    <script type="text/javascript">
+    	numbers=[45,89,76,91];
+        let b;
+    	let txt="";
+    	for (let b in numbers)
+    	{
+    		txt+=numbers[b]+"<br>";
+    	}
+    	document.getElementById('five').innerHTML=txt;
+    </script>
+
+    <h1 id="six"></h1>
+    <script type="text/javascript">
+    	let language="John";
+    	let u;
+    	let tx="";
+    	for (let u of language)
+    	{
+          tx+= u +"<br>";
+    	}
+    	document.getElementById('six').innerHTML=tx;
+    </script>
+    <h1 id="seven"></h1>
+    <script>
+    let l = 0;
+    while (l < 5) {
+    l++;
+    }  
+    document.getElementById("seven").innerHTML = l;
+</script>
+
+     <h1 id="abd"></h1>
+     <script>
+     let m= 0;
+     do {
+     m++;
+     }
+     while (m < 10);  
+     document.getElementById("abd").innerHTML = m;
+</script>
+</body>
+</html>
